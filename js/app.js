@@ -2,9 +2,13 @@
 $(document).ready(function(){
 	
 	$('body').on('click','a', function(event){
+
 		event.preventDefault();
+
 		var montrer = $(this).attr('href');
+
 		$('.para').hide();
+		
 		$(montrer).show();
 
 		if(montrer == '#contact'){
@@ -20,6 +24,7 @@ $(document).ready(function(){
 
 		} else {
 			$('.para').hide();
+
 			$(montrer).show()
 		};
 	});
@@ -31,9 +36,13 @@ $(document).ready(function(){
 	}*/
 
 	$.getJSON('https://s.idsympa.com/u-21.json', function(data){
+
 		var template = $('#template').html();
+
 		Mustache.parse(template);
+
 		var rendered = Mustache.render(template, data);
+
 		$('body').html(rendered);
 	});
 		/*yolo("{{first_name}}",$('span[elt="first_name"]'),data);
