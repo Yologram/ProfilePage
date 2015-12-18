@@ -15,7 +15,9 @@
 
 	<div id="photo"><img src="../ProfilePage/mick.jpg" width="350" height="250"></div>
 	<br>
-	<h1>Louis Metais</h1 	<br>
+
+	<h1>Louis Metais</h1>
+	<br>
 	<h2>Junior Developpeur Web</h2>
 
 	</div>
@@ -30,7 +32,7 @@
 			<br>
 			<li class="bouton"><a href="#apropos">A Propos de Moi</a></li>
 			<br>
-			<li class="bouton"><a href="Trucs1">YOLO</a></li>
+			<li class="bouton"><a href="#contact">Contacts</a></li>
 			<br>
 			<li class="bouton"><a href="Trucs1">Trucs</a></li>
 
@@ -62,20 +64,37 @@
 				<br>
 				<li>Badges : <span elt="badges"></span></li>
 				<br>
-				<li>Contacts : {{contact.email}}</li>
-				<br>
-				<span id="prob">{{contact.website}}</span>
+				
 			</ul>
 
-
-	
 	</div>
+
+	</div>
+
+	<div class="modalDialog">
+
+		<div id="contact">
+
+			<button id="close">Fermer</button>
+
+			<h2>Contacts</h2>
+
+			<p>{{contact.email}}</p>
+
+			<p>{{contact.website}}</p>
+
+			
+
+		</div>
+
 	</div>
 
 	<footer>
 
 		<div id="foot">
+
 		© METAIS Louis 2015
+
 		</div>
 
 	</footer>

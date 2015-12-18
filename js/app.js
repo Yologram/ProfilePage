@@ -3,9 +3,25 @@ $(document).ready(function(){
 	
 	$('body').on('click','a', function(event){
 		event.preventDefault();
+		var montrer = $(this).attr('href');
 		$('.para').hide();
-		var montrer=$(this).attr('href');
 		$(montrer).show();
+
+		if(montrer == '#contact'){
+
+			$('.modalDialog').show();
+
+			$('#close').on('click', function(){
+
+			$('.modalDialog').hide();
+
+		});
+
+
+		} else {
+			$('.para').hide();
+			$(montrer).show()
+		};
 	});
 
 	/*var yolo = function (champ, cible, json){
