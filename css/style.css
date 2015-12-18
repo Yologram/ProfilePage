@@ -1,0 +1,94 @@
+.para{
+	display: none;
+}
+body{
+	color:#9fa8da;
+	font-size: x-large;
+	font-family: 'Dancing Script', cursive;
+	margin: auto;
+	background-image:url("../random_grey_variations/random_grey_variations/random_grey_variations.png")
+}
+
+
+h1{
+	text-align: center;
+	color: pink;
+}
+h2{
+	color: pink;
+	text-align: center;}
+
+#resume{
+
+	width: 600px;
+	float: left;
+	margin-top: 50px;
+	border: 2px solid pink;
+	border-radius: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+}
+
+#menu {
+	height: 270px;
+	float: right;
+	width: 130px;
+	display: block;
+	border: 2px solid pink;
+	padding-right: 20px;
+	border-radius: 25px;
+	margin-top: 100px;
+
+}
+#photo{
+	margin: auto;
+	text-align: center;
+	border-radius: 40px;
+}
+
+#corps{
+	width: 940px;
+	margin: auto;
+
+}
+img{
+	border-radius: 100px;
+	border: solid 2px pink;
+	margin-top: 50px;
+}
+#tete{
+	border-bottom: 5px solid pink;
+}
+a{
+	text-decoration: none;
+	color: #9fa8da;
+}
+a:visited{
+	text-decoration: none;
+	color: pink;
+}
+
+#apropos{
+	width: 600px;
+	float: left;
+	margin-top: 50px;
+	border: 2px solid pink;
+	border-radius: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+}
+footer{
+	text-align: center;
+	border-top: solid 5px pink;
+	margin-top: 650px;
+	padding-top: 15px;
+	padding-bottom: 15px;s
+}
+#prob{
+	padding-left: 87px;
+}
+
+
+

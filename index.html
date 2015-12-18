@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<title>Profile Page</title>
+
+</head>
+<body>
+	<script id="template" type="x-tmpl-mustache">
+
+	<div id="tete">
+
+	<div id="photo"><img src="../ProfilePage/mick.jpg" width="350" height="250"></div>
+	<br>
+	<h1>Louis Metais</h1 	<br>
+	<h2>Junior Developpeur Web</h2>
+
+	</div>
+
+	<div id="corps">
+
+	<div id="menu">
+		
+		<ul>
+
+  			<li class="bouton"><a href="#resume">Résumé</a></li>
+			<br>
+			<li class="bouton"><a href="#apropos">A Propos de Moi</a></li>
+			<br>
+			<li class="bouton"><a href="Trucs1">YOLO</a></li>
+			<br>
+			<li class="bouton"><a href="Trucs1">Trucs</a></li>
+
+		</ul>
+
+	</div>
+
+	<div id="resume" class="para">
+
+			<h3>Résumé :</h3>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+			</p>
+
+	</div>
+
+	<div id="apropos" class="para">
+
+			<h3>A Propos de Moi</h3>
+
+			<ul>
+				<li>Nom : {{last_name}}</li>
+				<br>
+				<li>Prénom : {{first_name}}</li>
+				<br>
+				<li>ID : {{id}}</li>
+				<br>
+				<li>Emploi : {{occupation}}</li>
+				<br>
+				<li>Badges : <span elt="badges"></span></li>
+				<br>
+				<li>Contacts : {{contact.email}}</li>
+				<br>
+				<span id="prob">{{contact.website}}</span>
+			</ul>
+
+
+	
+	</div>
+	</div>
+
+	<footer>
+
+		<div id="foot">
+		© METAIS Louis 2015
+		</div>
+
+	</footer>
+</script>
+<script type="text/javascript" src="node_modules/zepto/zepto.min.js"></script>
+<script type="text/javascript" src="node_modules/mustache/mustache.js"></script>
+<script type="text/javascript" src="js/app.js" ></script> 
+</body>
+</html>
